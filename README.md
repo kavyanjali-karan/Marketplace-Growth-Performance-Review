@@ -18,70 +18,173 @@ This is the work.
 
 ---
 
-## Business Question
+## Executive Summary
 
-> *Where is revenue leaking in this e-commerce marketplace, and what should the business prioritise first to recover it?*
+This project analyzes the Brazilian Olist marketplace dataset to identify growth opportunities through customer segmentation, revenue analysis, retention evaluation, and funnel diagnostics.
+
+The objective is to simulate the type of business analysis performed by Amazon Business Analysts when evaluating marketplace performance, customer behavior, and operational efficiency.
+
+The analysis culminates in prioritized recommendations designed to improve revenue growth, customer retention, and marketplace performance.
+
+---
+
+## Resume Highlights
+
+- Analyzed 100k+ e-commerce orders across multiple relational datasets
+- Built customer segmentation framework using RFM methodology
+- Performed revenue, category, and funnel analysis
+- Identified customer retention and conversion opportunities
+- Developed executive-level recommendations supported by data
+- Demonstrated SQL-style business analytics workflows
+
+---
+
+## Business Problem
+
+E-commerce platforms generate large volumes of customer, order, seller, payment, and product data.
+
+Without structured analysis, decision-makers struggle to determine:
+
+- Which customers drive the most value
+- Which product categories contribute most revenue
+- Where conversion opportunities are lost
+- Which customer segments require retention strategies
+
+This project investigates these questions using transactional marketplace data.
+
+---
+
+## Dataset
+
+Brazilian Olist Marketplace Dataset
+
+Data Sources:
+
+- Customers
+- Orders
+- Payments
+- Reviews
+- Products
+- Sellers
+- Geolocation
+
+Combined dataset contains over 100,000 orders across multiple years and provides a realistic representation of marketplace operations.
 
 ---
 
 ## Analysis Modules
 
-### 1. Revenue Concentration (Pareto Analysis)
+## Revenue Analysis
 
-**Finding:** The top 20% of products drive 67% of total revenue — a classic Pareto distribution. Category concentration risk is high: 2 of 8 categories account for 51% of revenue.
+Key Questions:
 
-**Recommendation:** Build automated revenue concentration alerts. Any category dropping below its 3-month moving average by >15% should trigger a review — this is a BI infrastructure gap, not a one-time analysis.
+- How does revenue evolve over time?
+- Which periods contribute the most sales?
+- Are there seasonal trends?
 
----
+Outcome:
 
-### 2. Customer RFM Segmentation
-
-**Finding:** 23% of customers classified as "At Risk" — high historical value, no purchase in 60+ days. This segment represents the highest ROI retention opportunity: they've already demonstrated willingness to pay.
-
-| Segment | % of Customers | Revenue Contribution |
-|---|---|---|
-| Champions | 18% | 41% |
-| Loyal | 22% | 31% |
-| At Risk | 23% | 19% |
-| Lost | 37% | 9% |
-
-**Recommendation:** Reactivation campaign targeting At Risk segment. Cost per reactivation is 5–7× lower than new customer acquisition. Expected revenue recovery: 8–12% of current At Risk contribution within 90 days.
+Revenue trend analysis identified periods of accelerated marketplace growth and highlighted fluctuations that warrant operational investigation.
 
 ---
 
-### 3. Delivery Funnel Analysis
+## Product Category Analysis
 
-**Finding:** Order → Delivered conversion is 84.3%. The 15.7% gap concentrates in two stages: Warehouse Processing (6.1% drop) and Last-Mile Delivery (7.2% drop).
+Key Questions:
 
-**Recommendation:** The last-mile gap is disproportionately high in Tier 2/3 cities. A delivery prediction model (estimated ETA vs actual) would allow proactive customer communication — converting a negative experience into a trust-building touchpoint.
+- Which categories generate the highest revenue?
+- Which categories generate the highest order volume?
+- Are revenue and volume concentrated?
+
+Outcome:
+
+Category-level analysis identified the marketplace's most valuable product segments and opportunities for targeted expansion.
+
+---
+
+## Customer Segmentation (RFM)
+
+RFM Variables:
+
+- Recency
+- Frequency
+- Monetary Value
+
+Segments:
+
+- Champions
+- Loyal Customers
+- Potential Loyalists
+- At Risk
+- Lost Customers
+
+Outcome:
+
+Customer segmentation enabled prioritization of retention and re-engagement strategies.
 
 ---
 
 ### 4. Late Delivery Impact on Retention
 
-**Finding:** Customers who received one late delivery have a 34% lower repeat purchase rate in the following 30 days. Customers who received two have a 61% lower rate.
+## Funnel Analysis
 
-**Recommendation:** Late delivery is the single strongest leading indicator of churn identified in this dataset. Flagging customers who just experienced a late delivery for a proactive service recovery intervention (voucher or apology message) would reduce this gap materially.
+Key Questions:
 
----
+- Where do customers drop off?
+- Which stages create friction?
+- What operational improvements could increase conversion?
 
-## Key Findings Summary
+Outcome:
 
-| Finding | Business Impact |
-|---|---|
-| Top 20% products = 67% revenue | Concentration risk — needs monitoring infrastructure |
-| 23% customers At Risk | Highest-ROI retention opportunity available |
-| 15.7% order-to-delivery drop | Recoverable with last-mile prediction model |
-| 1 late delivery → 34% lower retention | Proactive service recovery has measurable ROI |
+Funnel analysis highlighted opportunities to improve customer experience and reduce conversion leakage.
 
 ---
 
-## Priority Recommendation (Ranked)
+## Key Findings
 
-1. **Reactivate At Risk customers** — highest ROI, lowest cost, fastest to implement
-2. **Build delivery prediction model** — proactive communication converts negative experience into trust
-3. **Implement revenue concentration monitoring** — automated alerts prevent category blind spots
-4. **Late delivery service recovery workflow** — data shows material retention impact; easy to operationalise
+### Finding 1
+
+A small subset of customers contributes a disproportionate share of revenue.
+
+### Finding 2
+
+Several product categories dominate marketplace sales.
+
+### Finding 3
+
+At-risk customer segments represent significant retention opportunities.
+
+### Finding 4
+
+Operational bottlenecks exist within the purchase journey and contribute to conversion loss.
+
+### Finding 5
+
+Customer behavior patterns support differentiated lifecycle strategies.
+
+---
+
+## Recommendations
+
+### Priority 1 — Retain High-Value Customers
+
+Develop loyalty programs targeting Champion and Loyal segments.
+
+### Priority 2 — Re-Engage At-Risk Customers
+
+Deploy lifecycle marketing campaigns before churn occurs.
+
+### Priority 3 — Double Down on High-Performing Categories
+
+Increase visibility and inventory investment in top-performing categories.
+
+### Priority 4 — Improve Funnel Conversion
+
+Investigate friction points identified during checkout and fulfillment stages.
+
+### Priority 5 — Strengthen Review Collection
+
+Higher review participation improves trust and conversion performance.
 
 ---
 
@@ -94,11 +197,44 @@ This is the work.
 ## File Structure
 
 ```
-amazon-bi-proactive-analysis/
+amazon-business-analyst-case-study/
+│
+├── README.md
+├── Amazon_BA_Analysis_Kavyanjali.ipynb
+├── requirements.txt
+│
 ├── data/
-│   └── ecommerce_data.csv          ← Public dataset (Amazon marketplace proxy)
-├── Amazon_BA_Analysis_Kavyanjali.ipynb  ← Full analysis notebook
-└── README.md
+│   ├── olist_customers_dataset.csv
+│   ├── olist_geolocation_dataset.csv
+│   ├── olist_orders_dataset.csv
+│   ├── olist_order_items_dataset.csv
+│   ├── olist_order_payments_dataset.csv
+│   ├── olist_order_reviews_dataset.csv
+│   ├── olist_products_dataset.csv
+│   ├── olist_sellers_dataset.csv
+│   └── product_category_name_translation.csv
+│
+├── sql/
+│   ├── revenue_analysis.sql
+│   ├── customer_segmentation.sql
+│   ├── retention_analysis.sql
+│   └── funnel_analysis.sql
+│
+├── outputs/
+│   ├── executive_summary.md
+│   ├── revenue_trend.png
+│   ├── category_analysis.png
+│   ├── customer_segments.png
+│   ├── funnel_analysis.png
+│   └── recommendations.md
+│
+└── screenshots/
+    ├── revenue_dashboard.png
+    ├── category_dashboard.png
+    ├── rfm_dashboard.png
+    ├── funnel_dashboard.png
+    └── executive_summary.png
+
 ```
 
 ---
