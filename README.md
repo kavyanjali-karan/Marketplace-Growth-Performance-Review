@@ -190,7 +190,7 @@ Higher review participation improves trust and conversion performance.
 
 ## Tools & Methods
 
-`Python` · `Pandas` · `Plotly` · `RFM Segmentation` · `Pareto Analysis` · `Funnel Analytics` · `Cohort Analysis`
+Python · Pandas · NumPy · Matplotlib · Seaborn · Plotly · SQL · Jupyter Notebook
 
 ---
 
