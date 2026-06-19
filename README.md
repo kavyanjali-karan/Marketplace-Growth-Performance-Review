@@ -106,7 +106,7 @@ amazon-bi-proactive-analysis/
 ## How to Run
 
 ```bash
-git clone https://github.com/karankavyanjali77-sys/amazon-bi-proactive-analysis
+git clone https://github.com/kavyanjali-karan/amazon-bi-proactive-analysis
 cd amazon-bi-proactive-analysis
 pip install pandas plotly jupyter
 jupyter notebook Amazon_BA_Analysis_Kavyanjali.ipynb
@@ -116,4 +116,4 @@ jupyter notebook Amazon_BA_Analysis_Kavyanjali.ipynb
 
 **Kavyanjali Karan** · B.Tech CSE, ITER SOA University (2027)  
 Selected: McKinsey Forward 2026 · Google Gen AI Academy APAC 2026  
-[LinkedIn](https://linkedin.com/in/kavyanjali-karan) · [GitHub](https://github.com/karankavyanjali77-sys) · karankavyanjali77@gmail.com
+[LinkedIn](https://linkedin.com/in/kavyanjali-karan) · [GitHub](https://github.com/kavyanjali-karan) · karankavyanjali77@gmail.com
