@@ -1,0 +1,7 @@
+Seller Revenue=
+
+SUM(
+
+fact_orders[revenue]
+
+)

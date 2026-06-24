@@ -1,0 +1,9 @@
+Average Order Value=
+
+DIVIDE(
+
+[Total Revenue],
+
+[Orders]
+
+)

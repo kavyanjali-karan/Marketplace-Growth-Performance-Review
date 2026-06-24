@@ -1,0 +1,7 @@
+Active Customers=
+
+DISTINCTCOUNT(
+
+dim_customer[customer_id]
+
+)

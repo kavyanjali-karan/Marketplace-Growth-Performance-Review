@@ -1,0 +1,17 @@
+Total Revenue =
+
+SUM(
+
+fact_orders[revenue]
+
+)
+
+--------------------------------
+
+Orders =
+
+COUNTROWS(
+
+fact_orders
+
+)

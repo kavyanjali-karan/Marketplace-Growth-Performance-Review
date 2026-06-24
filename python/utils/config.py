@@ -1,0 +1,5 @@
+REFRESH_TIME="06:00 UTC"
+
+SEMANTIC_MODEL_VERSION="1.0"
+
+DATA_OWNER="Business Intelligence"
