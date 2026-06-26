@@ -86,15 +86,15 @@ dim_date
 
 ## Dashboard Pages
 
-Executive Command Center
+Market Overview
 
-Marketplace Revenue
+Customer Analysis
 
-Category Intelligence
+Product Analysis
 
-Seller Intelligence
+Seller Performance
 
-Operational Health
+Order Trends
 
 ---
 

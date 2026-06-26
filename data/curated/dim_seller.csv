@@ -1,0 +1,201 @@
+seller_key,seller_id,seller_name,tier,region,rating,join_date
+1,S00001,Singhal Group,Silver,North,4.6,2022-10-20
+2,S00002,Sethi-Chana,Silver,West,4.8,2023-12-31
+3,S00003,Bhattacharyya Inc,Bronze,North,4.6,2024-12-15
+4,S00004,Karnik LLC,Silver,East,4.1,2021-10-26
+5,S00005,"Gola, Chaudhry and Kohli",Bronze,North,4.3,2023-01-04
+6,S00006,Ramesh Ltd,Bronze,West,4.0,2023-03-24
+7,S00007,Kohli-Rajan,Bronze,North,3.9,2021-12-21
+8,S00008,Tiwari-Bose,Silver,North,4.3,2021-09-03
+9,S00009,Chatterjee-Bumb,Silver,North,4.1,2023-10-17
+10,S00010,Bains-Agate,Gold,West,4.1,2023-08-23
+11,S00011,"Ratta, Murty and Banerjee",Bronze,South,4.1,2024-04-05
+12,S00012,Pandya PLC,Silver,West,4.5,2026-02-13
+13,S00013,"Peri, Pandit and Warrior",Bronze,South,4.4,2025-09-02
+14,S00014,Nagy Group,Gold,West,4.0,2026-03-24
+15,S00015,Sinha LLC,Silver,East,4.1,2022-10-19
+16,S00016,"Das, Deshmukh and Mand",Bronze,East,4.7,2024-07-22
+17,S00017,"Bhatti, Mani and Goyal",Silver,South,4.7,2022-09-19
+18,S00018,Kara-Balasubramanian,Silver,South,4.6,2022-07-18
+19,S00019,"Sangha, Naik and Sarkar",Silver,South,4.8,2024-12-06
+20,S00020,Padmanabhan and Sons,Bronze,East,5.0,2022-05-14
+21,S00021,Gala LLC,Bronze,East,3.7,2024-06-22
+22,S00022,Dara-Chakrabarti,Bronze,East,4.4,2023-07-04
+23,S00023,"Oza, Grewal and Gola",Bronze,North,3.9,2025-06-28
+24,S00024,"Dayal, Mitter and Sandhu",Silver,South,3.8,2026-01-02
+25,S00025,"Om, Sha and Dalal",Silver,East,4.2,2023-08-22
+26,S00026,"Sidhu, Ben and Bumb",Gold,East,3.9,2025-04-09
+27,S00027,Karnik-Ratta,Bronze,South,4.7,2026-04-04
+28,S00028,"Krishnamurthy, Palla and Bajwa",Silver,North,4.2,2023-06-05
+29,S00029,Korpal Ltd,Gold,East,3.5,2022-05-08
+30,S00030,Kala LLC,Bronze,South,3.7,2022-02-19
+31,S00031,Baria-Vala,Bronze,East,4.3,2025-09-03
+32,S00032,Chander-Lala,Gold,West,5.0,2026-03-08
+33,S00033,Prakash Inc,Silver,North,4.3,2024-09-06
+34,S00034,Atwal-Ray,Silver,East,5.0,2026-01-23
+35,S00035,"Buch, Patel and Chana",Silver,North,5.0,2026-03-19
+36,S00036,Raja and Sons,Bronze,East,3.5,2023-09-03
+37,S00037,Chaudhry and Sons,Silver,North,4.5,2022-06-01
+38,S00038,Thakur-Sengupta,Silver,West,4.4,2024-06-19
+39,S00039,"Das, Mand and Narayan",Silver,North,4.3,2023-10-07
+40,S00040,Tara Ltd,Bronze,North,4.6,2024-07-26
+41,S00041,Rajagopal-Devi,Bronze,West,4.0,2025-12-31
+42,S00042,Gola Group,Silver,East,3.7,2025-06-29
+43,S00043,Dash-Bhargava,Silver,North,4.0,2026-05-08
+44,S00044,Chaudhary PLC,Silver,West,4.6,2022-05-12
+45,S00045,"Krish, Kapadia and Krishna",Silver,West,4.9,2022-05-02
+46,S00046,Patel Group,Silver,West,4.3,2026-04-15
+47,S00047,"Parmer, Sharaf and Jayaraman",Gold,North,4.3,2022-06-22
+48,S00048,Srinivas-Sangha,Bronze,East,3.8,2024-09-15
+49,S00049,Nath-Sandal,Gold,West,3.8,2024-07-16
+50,S00050,Goswami-Kar,Bronze,South,4.9,2022-07-24
+51,S00051,Aurora-Narang,Bronze,West,4.7,2026-03-30
+52,S00052,Venkataraman PLC,Gold,North,3.7,2025-04-03
+53,S00053,Manda-Chanda,Gold,South,4.4,2025-12-11
+54,S00054,Jhaveri-Narang,Silver,North,4.8,2026-02-05
+55,S00055,"Batta, Murty and Bassi",Silver,North,4.7,2022-02-06
+56,S00056,Shroff-Sodhi,Gold,East,4.5,2023-04-17
+57,S00057,Kala-Boase,Bronze,South,3.9,2023-04-07
+58,S00058,"Kar, Chakrabarti and Nadkarni",Silver,West,4.0,2025-12-12
+59,S00059,Choudhry-Barad,Silver,East,4.6,2023-03-03
+60,S00060,Rai-Sibal,Gold,North,3.8,2025-12-08
+61,S00061,"Srivastava, Mitter and Sinha",Silver,West,4.6,2023-04-04
+62,S00062,Chowdhury-Kadakia,Silver,South,3.6,2023-02-18
+63,S00063,"Agate, Pandey and Nagy",Bronze,South,3.8,2026-03-01
+64,S00064,"Khalsa, Ramakrishnan and Mane",Silver,South,3.9,2023-01-24
+65,S00065,Sanghvi-Kant,Bronze,East,4.0,2024-06-02
+66,S00066,"Taneja, De and Narang",Bronze,West,4.6,2024-03-12
+67,S00067,"Dar, Lad and Kohli",Silver,South,3.6,2022-12-15
+68,S00068,"Hora, Sastry and Nadkarni",Silver,North,4.7,2023-12-11
+69,S00069,Seshadri Ltd,Gold,South,4.9,2025-01-11
+70,S00070,"Kashyap, Garde and Sidhu",Bronze,West,3.7,2021-07-31
+71,S00071,Johal-Yohannan,Bronze,North,3.5,2023-08-15
+72,S00072,Buch Inc,Silver,East,3.8,2021-06-24
+73,S00073,Ganesh-Dube,Gold,East,4.2,2022-12-24
+74,S00074,Hans Ltd,Bronze,South,4.9,2022-10-23
+75,S00075,Cherian-Saraf,Silver,North,4.5,2023-09-16
+76,S00076,Varkey and Sons,Silver,North,3.7,2021-11-10
+77,S00077,"Oommen, Ahuja and Mittal",Silver,North,4.1,2026-02-03
+78,S00078,"Apte, Hayre and Iyer",Bronze,South,4.1,2024-04-02
+79,S00079,Chandran-Viswanathan,Silver,North,4.2,2022-10-16
+80,S00080,Baral LLC,Silver,North,4.3,2024-08-18
+81,S00081,"Bains, Gara and Varkey",Bronze,East,4.1,2022-07-04
+82,S00082,Khatri PLC,Silver,South,3.7,2024-11-18
+83,S00083,Tank Ltd,Silver,North,3.6,2023-11-06
+84,S00084,"Sachdeva, Rajagopalan and Sarkar",Silver,North,4.8,2022-11-11
+85,S00085,"Sankar, Sandhu and Bains",Bronze,West,5.0,2021-07-27
+86,S00086,"Nagar, Shenoy and Palla",Gold,North,3.6,2025-11-09
+87,S00087,Hayer Ltd,Bronze,North,5.0,2026-05-14
+88,S00088,Randhawa and Sons,Silver,West,3.8,2025-08-08
+89,S00089,"Mammen, Thaman and Chopra",Silver,South,3.6,2026-04-21
+90,S00090,Kota-Deshmukh,Silver,South,4.9,2024-06-04
+91,S00091,"Saraf, Peri and Ramachandran",Silver,North,4.5,2025-07-08
+92,S00092,Baral PLC,Silver,East,3.6,2022-07-12
+93,S00093,"Lad, Singhal and Bose",Gold,West,3.6,2023-05-03
+94,S00094,Apte-Edwin,Silver,East,3.7,2024-12-28
+95,S00095,Rege-Sibal,Bronze,North,3.5,2021-09-22
+96,S00096,"Hari, Sankar and Pal",Silver,West,4.8,2024-05-26
+97,S00097,Keer Ltd,Gold,East,3.9,2024-07-20
+98,S00098,"Kala, Suresh and Brahmbhatt",Gold,North,3.9,2023-06-10
+99,S00099,"Korpal, Kara and Ram",Silver,North,4.2,2024-06-08
+100,S00100,Babu-Wable,Silver,West,3.7,2022-05-11
+101,S00101,"Thaker, Natarajan and Balan",Bronze,East,3.9,2023-09-29
+102,S00102,Ravel PLC,Gold,South,4.5,2021-11-15
+103,S00103,"Goda, Borah and Dara",Gold,East,3.7,2021-12-08
+104,S00104,"Kamdar, Gole and Swaminathan",Silver,West,4.3,2022-09-09
+105,S00105,"Dara, Oak and Grewal",Gold,East,4.3,2025-01-05
+106,S00106,Bala Ltd,Silver,East,3.7,2021-10-22
+107,S00107,"Gill, Sant and Loke",Silver,East,5.0,2023-10-19
+108,S00108,Varma PLC,Silver,East,3.6,2024-12-18
+109,S00109,Murty Ltd,Bronze,South,3.6,2022-10-10
+110,S00110,Vala Inc,Bronze,East,3.7,2025-10-16
+111,S00111,Pingle Inc,Gold,East,4.5,2021-11-23
+112,S00112,Hora-Sachdev,Silver,East,4.4,2023-10-06
+113,S00113,Sinha-Om,Silver,North,4.6,2022-07-14
+114,S00114,Tara Group,Gold,North,5.0,2023-01-07
+115,S00115,"Mall, Bora and Mand",Silver,West,4.4,2022-08-05
+116,S00116,Balasubramanian-Majumdar,Silver,South,4.6,2024-05-24
+117,S00117,Dara-Chokshi,Silver,South,3.7,2025-12-28
+118,S00118,Shukla PLC,Gold,West,3.9,2025-06-06
+119,S00119,"Gokhale, Bhasin and Ghose",Silver,South,4.2,2023-05-17
+120,S00120,Ramakrishnan Ltd,Silver,East,4.0,2024-10-28
+121,S00121,Narula PLC,Bronze,South,4.2,2023-11-10
+122,S00122,Dugar-Reddy,Silver,South,4.5,2024-07-24
+123,S00123,Das-Tella,Silver,West,3.5,2023-12-13
+124,S00124,"Shankar, Salvi and Nair",Silver,West,3.7,2026-02-13
+125,S00125,Anand-Devi,Gold,South,3.7,2024-09-24
+126,S00126,Sarraf and Sons,Gold,North,4.5,2022-09-01
+127,S00127,Kala and Sons,Silver,West,4.2,2022-01-25
+128,S00128,"Rajan, Shukla and Raval",Silver,South,3.7,2022-03-16
+129,S00129,"Balasubramanian, Khalsa and Palla",Silver,South,4.5,2021-06-26
+130,S00130,"Kannan, Parsa and Grewal",Silver,West,3.6,2023-09-02
+131,S00131,"Sachar, Keer and Patla",Silver,North,4.8,2021-08-09
+132,S00132,"Sant, Oommen and Lata",Silver,South,3.9,2023-04-21
+133,S00133,"Pal, Subramanian and Ganguly",Silver,North,4.9,2024-01-06
+134,S00134,"Ramakrishnan, Wadhwa and Pradhan",Bronze,East,4.8,2025-07-01
+135,S00135,Sahota-Boase,Gold,North,4.2,2024-02-11
+136,S00136,"Ghose, Agrawal and Soman",Bronze,South,4.7,2022-02-28
+137,S00137,Sawhney-Swaminathan,Bronze,East,4.1,2022-12-19
+138,S00138,"Palla, Loyal and Sehgal",Silver,North,4.2,2022-12-17
+139,S00139,Nagy-Taneja,Gold,West,3.8,2024-05-09
+140,S00140,Tata-Kala,Silver,East,4.0,2024-08-04
+141,S00141,"Prashad, Batra and Thaker",Silver,North,4.3,2024-10-11
+142,S00142,Kapur-Sastry,Bronze,South,4.5,2022-04-13
+143,S00143,Parikh Ltd,Bronze,South,4.7,2024-10-27
+144,S00144,Khanna PLC,Silver,South,4.7,2022-03-23
+145,S00145,Patla Ltd,Silver,South,3.8,2025-05-13
+146,S00146,Bora-Nanda,Silver,West,3.5,2022-04-27
+147,S00147,Manda-Saini,Silver,East,4.3,2025-06-28
+148,S00148,"Bera, Misra and Hegde",Silver,East,4.4,2025-07-03
+149,S00149,Khatri LLC,Bronze,East,4.4,2024-09-22
+150,S00150,"Varty, Dora and Ramaswamy",Gold,East,4.7,2021-12-16
+151,S00151,Kanda-Contractor,Silver,North,4.5,2026-04-19
+152,S00152,"Dalal, Bhardwaj and Chaudhari",Silver,East,3.6,2021-10-17
+153,S00153,Chaudry and Sons,Bronze,East,3.7,2022-09-06
+154,S00154,Banerjee and Sons,Silver,East,4.4,2022-01-30
+155,S00155,Chahal Inc,Silver,South,4.2,2026-03-17
+156,S00156,"Lanka, Nazareth and Chanda",Silver,East,3.5,2026-02-19
+157,S00157,Sandal Inc,Silver,West,3.8,2022-11-17
+158,S00158,"Zachariah, Bassi and Choudhury",Silver,North,4.3,2025-05-31
+159,S00159,"Tiwari, Panchal and Pradhan",Bronze,East,4.3,2023-06-12
+160,S00160,Badal-Mani,Silver,South,3.9,2026-03-09
+161,S00161,Dani PLC,Silver,North,4.5,2021-06-28
+162,S00162,Amble LLC,Bronze,West,3.5,2024-05-27
+163,S00163,Pandit Group,Silver,North,4.2,2023-02-25
+164,S00164,Varty-Master,Silver,East,4.7,2022-06-22
+165,S00165,Bhasin-Johal,Silver,East,4.4,2024-03-13
+166,S00166,"Nadkarni, Deep and Mohanty",Silver,East,4.5,2024-03-24
+167,S00167,"Karpe, Dhingra and Bajaj",Gold,North,3.9,2023-11-17
+168,S00168,Raj-Menon,Gold,East,4.9,2024-06-12
+169,S00169,Tella and Sons,Gold,North,3.9,2025-04-28
+170,S00170,Puri and Sons,Silver,North,4.5,2022-01-18
+171,S00171,"Bir, Mitter and Saraf",Silver,South,4.1,2026-03-21
+172,S00172,Sridhar-Arya,Bronze,North,4.0,2021-08-26
+173,S00173,Tandon PLC,Silver,East,4.9,2023-01-20
+174,S00174,"Mohanty, Kota and Toor",Silver,North,4.0,2021-09-03
+175,S00175,Merchant-Chawla,Silver,South,4.6,2021-07-24
+176,S00176,Soni-Saini,Bronze,North,4.6,2022-04-15
+177,S00177,Bahri-Dhar,Bronze,North,4.9,2023-10-01
+178,S00178,Varughese PLC,Gold,North,4.3,2021-07-04
+179,S00179,"Suri, Sridhar and Saha",Silver,North,3.7,2023-03-02
+180,S00180,Vaidya-Puri,Bronze,East,4.4,2026-01-28
+181,S00181,"Agarwal, Pathak and Ray",Gold,West,4.7,2022-10-14
+182,S00182,"Sarna, Wagle and Puri",Silver,South,3.8,2022-09-11
+183,S00183,Dubey and Sons,Bronze,East,4.5,2023-11-23
+184,S00184,Karpe-Desai,Silver,West,4.2,2024-01-25
+185,S00185,Prasad-Aggarwal,Gold,South,4.9,2025-02-11
+186,S00186,Sridhar-Sachdeva,Silver,North,3.7,2023-10-22
+187,S00187,Narang-Kapur,Silver,West,4.8,2026-01-07
+188,S00188,"Gole, Mukhopadhyay and Bali",Bronze,North,4.9,2022-02-09
+189,S00189,Kaur-Bhakta,Silver,North,4.6,2022-06-14
+190,S00190,"Chada, Dyal and Ravel",Silver,North,4.7,2023-08-15
+191,S00191,Das-Banik,Silver,West,3.7,2023-07-29
+192,S00192,Chaudhuri Inc,Silver,East,3.9,2026-02-25
+193,S00193,Rajagopalan-Dhaliwal,Bronze,West,4.5,2024-08-21
+194,S00194,Cherian PLC,Silver,South,5.0,2024-01-14
+195,S00195,Sane-Bandi,Bronze,North,4.5,2025-05-03
+196,S00196,Atwal-Mammen,Gold,North,3.6,2023-07-11
+197,S00197,Arya-Devan,Gold,East,4.5,2025-09-05
+198,S00198,Chowdhury Ltd,Gold,North,4.0,2024-04-01
+199,S00199,Lall-Goswami,Bronze,South,4.6,2023-02-27
+200,S00200,"Bhasin, Rai and Kohli",Silver,North,4.6,2025-10-14
