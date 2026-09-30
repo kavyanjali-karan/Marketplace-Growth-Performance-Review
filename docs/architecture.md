@@ -28,8 +28,4 @@ Power BI Semantic Model
 
 ↓
 
-Tableau Executive Reporting
-
-↓
-
 Weekly Business Review

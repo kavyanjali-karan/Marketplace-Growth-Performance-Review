@@ -2,8 +2,9 @@ import pandas as pd
 import numpy as np
 from faker import Faker
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, date
 
+Faker.seed(42)
 fake = Faker("en_IN")
 np.random.seed(42)
 
@@ -52,8 +53,8 @@ for i in range(1, N_CUSTOMERS + 1):
         "state": fake.state(),
         "country": "India",
         "signup_date": fake.date_between(
-            start_date="-3y",
-            end_date="today"
+            start_date=date(2019, 1, 1),
+            end_date=date(2023, 12, 31)
         ),
         "status": np.random.choice(
             ["Active", "Inactive"],
@@ -192,8 +193,8 @@ for i in range(1, N_SELLERS + 1):
             1
         ),
         "join_date": fake.date_between(
-            start_date="-5y",
-            end_date="-30d"
+            start_date=date(2018, 1, 1),
+            end_date=date(2023, 12, 31)
         )
     })
 
