@@ -10,9 +10,14 @@ Output: assets/dashboard.html
 
 import csv
 import json
+import sys
 import tempfile
 from collections import defaultdict
 from pathlib import Path
+
+# Windows consoles default to cp1252 and choke on the ₹ in the summary log.
+if sys.stdout.encoding and sys.stdout.encoding.lower().replace("-", "") != "utf8":
+    sys.stdout.reconfigure(encoding="utf-8")
 
 # Chart.js is inlined when a local copy exists (CI downloads one), so the
 # dashboard works offline and without depending on a CDN at view time.
@@ -143,16 +148,16 @@ def generate_html(m):
 </div>
 <div class="dash">
     <div class="kpi-row">
-        <div class="kpi"><div class="kpi-label">Total Revenue</div><div class="kpi-val">${m['total_rev']/1e9:.2f}B</div><div class="kpi-note">{m['total_orders']:,} orders processed</div></div>
-        <div class="kpi"><div class="kpi-label">Unique Buyers</div><div class="kpi-val">{m['total_buyers']:,}</div><div class="kpi-note">Avg ${m['total_rev']/m['total_buyers']:,.0f}/buyer</div></div>
-        <div class="kpi"><div class="kpi-label">Electronics Share</div><div class="kpi-val">{elec_pct}%</div><div class="kpi-note">${m['cat_rev'].get('Electronics',0)/1e9:.2f}B of ${m['total_rev']/1e9:.2f}B</div></div>
+        <div class="kpi"><div class="kpi-label">Total Revenue</div><div class="kpi-val">₹{m['total_rev']/1e9:.2f}B</div><div class="kpi-note">{m['total_orders']:,} orders processed</div></div>
+        <div class="kpi"><div class="kpi-label">Unique Buyers</div><div class="kpi-val">{m['total_buyers']:,}</div><div class="kpi-note">Avg ₹{m['total_rev']/m['total_buyers']:,.0f}/buyer</div></div>
+        <div class="kpi"><div class="kpi-label">Electronics Share</div><div class="kpi-val">{elec_pct}%</div><div class="kpi-note">₹{m['cat_rev'].get('Electronics',0)/1e9:.2f}B of ₹{m['total_rev']/1e9:.2f}B</div></div>
         <div class="kpi"><div class="kpi-label">Returns + Cancel</div><div class="kpi-val">{ret_pct}%</div><div class="kpi-note">{m['status_counts'].get('Returned',0)+m['status_counts'].get('Cancelled',0):,} orders</div></div>
         <div class="kpi"><div class="kpi-label">Categories</div><div class="kpi-val">{len(m['cat_rev'])}</div><div class="kpi-note">Product lines</div></div>
     </div>
 
     <div class="row row-2">
         <div class="box">
-            <div class="box-title">Monthly Revenue Trend ($M)</div>
+            <div class="box-title">Monthly Revenue Trend (₹M)</div>
             <canvas id="monthlyRev" height="180"></canvas>
         </div>
         <div class="box">
@@ -177,14 +182,14 @@ def generate_html(m):
             <div class="box-title">Top 5 Sellers by Revenue</div>
             <table class="dt">
                 <thead><tr><th>Seller</th><th>Revenue</th><th>Orders</th><th>Tier</th></tr></thead>
-                <tbody>{"".join(f'<tr><td>{sid}</td><td>${rev}M</td><td>{cnt:,}</td><td>{tier}</td></tr>' for sid, rev, cnt, tier in m['top_sellers'])}</tbody>
+                <tbody>{"".join(f'<tr><td>{sid}</td><td>₹{rev}M</td><td>{cnt:,}</td><td>{tier}</td></tr>' for sid, rev, cnt, tier in m['top_sellers'])}</tbody>
             </table>
         </div>
         <div class="box">
             <div class="box-title">Category Breakdown</div>
             <table class="dt">
                 <thead><tr><th>Category</th><th>Revenue</th><th>Share</th><th>Orders</th></tr></thead>
-                <tbody>{"".join(f'<tr><td>{cat}</td><td>${rev/1e6:.0f}M</td><td>{cat_pcts[cat]}%</td><td>{m["cat_count"][cat]:,}</td></tr>' for cat, rev in m['cat_rev'].items())}</tbody>
+                <tbody>{"".join(f'<tr><td>{cat}</td><td>₹{rev/1e6:.0f}M</td><td>{cat_pcts[cat]}%</td><td>{m["cat_count"][cat]:,}</td></tr>' for cat, rev in m['cat_rev'].items())}</tbody>
             </table>
         </div>
     </div>
@@ -198,7 +203,7 @@ const C = ['#3b82f6','#10b981','#f59e0b','#ef4444','#8b5cf6','#06b6d4'];
 new Chart(document.getElementById('monthlyRev'), {{
     type: 'bar',
     data: {{ labels: months, datasets: [{{ data: {json.dumps(m['monthly_rev'])}, backgroundColor: '#3b82f6', borderRadius: 3 }}] }},
-    options: {{ responsive: true, plugins: {{ legend: {{ display: false }} }}, scales: {{ y: {{ ticks: {{ callback: v => '$'+v+'M' }}, grid: {{ color: '#f1f5f9' }} }}, x: {{ grid: {{ display: false }} }} }} }}
+    options: {{ responsive: true, plugins: {{ legend: {{ display: false }} }}, scales: {{ y: {{ ticks: {{ callback: v => '₹'+v+'M' }}, grid: {{ color: '#f1f5f9' }} }}, x: {{ grid: {{ display: false }} }} }} }}
 }});
 
 new Chart(document.getElementById('catPie'), {{
@@ -229,7 +234,7 @@ def main():
     html = generate_html(m)
     OUTPUT.write_text(html, encoding="utf-8")
     print(f"Dashboard generated: {OUTPUT}")
-    print(f"  Revenue: ${m['total_rev']/1e9:.2f}B | Orders: {m['total_orders']:,} | Buyers: {m['total_buyers']:,}")
+    print(f"  Revenue: ₹{m['total_rev']/1e9:.2f}B | Orders: {m['total_orders']:,} | Buyers: {m['total_buyers']:,}")
     print(f"  Electronics: {m['cat_rev'].get('Electronics',0)/m['total_rev']*100:.1f}%")
     ret = m['status_counts'].get('Returned',0) + m['status_counts'].get('Cancelled',0)
     print(f"  Returns+Cancelled: {ret/m['total_orders']*100:.1f}%")

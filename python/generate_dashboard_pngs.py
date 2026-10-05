@@ -98,26 +98,26 @@ def style_ax(ax, title="", xlabel="", ylabel=""):
 
 def fmt_k(x, _=None):
     if abs(x) >= 1_000_000_000:
-        return f"${x/1_000_000_000:.1f}B"
+        return f"₹{x/1_000_000_000:.1f}B"
     if abs(x) >= 1_000_000:
-        return f"${x/1_000_000:.1f}M"
+        return f"₹{x/1_000_000:.1f}M"
     if abs(x) >= 1_000:
-        return f"${x/1_000:.0f}K"
-    return f"${x:.0f}"
+        return f"₹{x/1_000:.0f}K"
+    return f"₹{x:.0f}"
 
 
 # Dashboard 1 - Market Overview
 def create_market_overview():
     fig = plt.figure(figsize=(20, 12), facecolor=BG)
     fig.suptitle("Marketplace Overview", color=TEXT, fontsize=20, fontweight="bold", y=0.97, x=0.04, ha="left")
-    fig.text(0.04, 0.945, f"75,000 orders  |  10,000 buyers  |  ${total_rev/1e9:.1f}B revenue  |  {len(orders['seller_id'].unique())} sellers",
+    fig.text(0.04, 0.945, f"75,000 orders  |  10,000 buyers  |  ₹{total_rev/1e9:.1f}B revenue  |  {len(orders['seller_id'].unique())} sellers",
              color=MUTED, fontsize=10, ha="left")
 
     # KPI cards
     card_data = [
-        ("Total Revenue", f"${total_rev/1e9:.1f}B", f"Profit: ${total_profit/1e9:.1f}B", ACCENT1),
+        ("Total Revenue", f"₹{total_rev/1e9:.1f}B", f"Profit: ₹{total_profit/1e9:.1f}B", ACCENT1),
         ("Orders", f"{total_orders:,}", f"Delivered: {status_counts.get('Delivered', 0):,}", ACCENT4),
-        ("Buyers", f"{unique_buyers:,}", f"Avg order: ${total_rev/total_orders:,.0f}", ACCENT2),
+        ("Buyers", f"{unique_buyers:,}", f"Avg order: ₹{total_rev/total_orders:,.0f}", ACCENT2),
         ("Returns", f"{status_counts.get('Returned', 0):,}", f"{status_counts.get('Returned', 0)/total_orders*100:.1f}% rate", ACCENT5),
         ("Cancellations", f"{status_counts.get('Cancelled', 0):,}", f"{status_counts.get('Cancelled', 0)/total_orders*100:.1f}% rate", ACCENT3),
     ]
@@ -247,7 +247,7 @@ def create_product_analysis():
 
     # Avg order value by category
     ax4 = fig.add_axes([0.52, 0.06, 0.44, 0.38])
-    style_ax(ax4, "Avg Order Value by Category", ylabel="AOV ($)")
+    style_ax(ax4, "Avg Order Value by Category", ylabel="AOV (₹)")
     cat_aov = orders.groupby("category")["revenue"].mean().sort_values(ascending=True)
     bars = ax4.barh(cat_aov.index, cat_aov.values, color=PALETTE[:len(cat_aov)], height=0.6)
     ax4.xaxis.set_major_formatter(mticker.FuncFormatter(fmt_k))
