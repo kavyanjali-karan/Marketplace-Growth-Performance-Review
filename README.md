@@ -117,7 +117,7 @@ and customer segmentation.
 ### Customer Analysis
 ![Customer Analysis](assets/customer_analysis.png)
 
-### Regenerate the dashboards
+### Rebuilding the dashboards
 
 ```bash
 python data/generate_data.py              # datasets (seeded, reproducible)

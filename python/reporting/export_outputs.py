@@ -1,4 +1,4 @@
-"""Regenerate every file in outputs/ from the raw data.
+"""Rewrite every file in outputs/ from the raw data.
 
 The outputs/ folder mirrors the Power BI report exports. They are derived,
 not hand-made: run this script after data/generate_data.py and the CSVs
@@ -81,7 +81,7 @@ def main() -> None:
     for name in sorted(OUT.glob("*.csv")):
         rows = sum(1 for _ in name.open(encoding="utf-8-sig")) - 1
         print(f"OK {name.name} ({rows} rows)")
-    print(f"\nAll deliverables written to {OUT}")
+    print(f"\nAll outputs written to {OUT}")
 
 
 if __name__ == "__main__":
